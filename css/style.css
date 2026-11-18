@@ -1,0 +1,424 @@
+
+/* ========================================
+   GENERAL SETTINGS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffdf8;
+    color: #35382f;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ========================================
+   TOP ANIME LANDSCAPE BANNER
+======================================== */
+
+.top-banner {
+    width: 100%;
+    height: 310px;
+    background-image: url("../assets/images/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Soft overlay for a dreamy appearance */
+
+.top-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.12)
+    );
+}
+
+/* ========================================
+   MAIN DASHBOARD CONTAINER
+======================================== */
+
+.dashboard-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+/* ========================================
+   PROFILE AREA
+======================================== */
+
+.profile-area {
+    position: relative;
+    padding-top: 78px;
+}
+
+.profile-avatar {
+    position: absolute;
+    top: -68px;
+    left: 20px;
+
+    width: 108px;
+    height: 108px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e8f0e4;
+    border: 6px solid #fffdf8;
+    border-radius: 50%;
+
+    font-size: 49px;
+
+    box-shadow: 0 5px 18px rgba(70, 90, 65, 0.10);
+}
+
+/* ========================================
+   DASHBOARD TITLE
+======================================== */
+
+.profile-area h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 20px 5px;
+    color: #3e503b;
+    letter-spacing: -1px;
+}
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.dashboard-divider {
+    width: 100%;
+    height: 1px;
+    background: #e5e8df;
+    margin-bottom: 38px;
+}
+
+/* ========================================
+   THREE COLUMN DASHBOARD GRID
+======================================== */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+/* ========================================
+   DASHBOARD CARDS
+======================================== */
+
+.dashboard-card {
+    position: relative;
+    overflow: hidden;
+
+    background: #f6f8f1;
+    border: 1px solid #e4eadd;
+    border-radius: 19px;
+
+    padding: 27px;
+
+    min-height: 155px;
+
+    box-shadow: 0 5px 18px rgba(50, 65, 45, 0.055);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+    background: #eef4e9;
+    box-shadow: 0 12px 25px rgba(50, 65, 45, 0.12);
+}
+
+.dashboard-card h2 {
+    font-size: 21px;
+    color: #536b52;
+    margin-bottom: 13px;
+}
+
+.dashboard-card p {
+    font-size: 15px;
+    color: #777b70;
+    line-height: 1.8;
+}
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+.section-heading {
+    margin: 55px 0 23px;
+    padding-left: 5px;
+}
+
+.section-heading h2 {
+    font-size: 29px;
+    color: #536b52;
+    letter-spacing: -0.5px;
+}
+
+.section-heading p {
+    color: #85877d;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+/* ========================================
+   CONTACT CARD
+======================================== */
+
+.contact-card {
+    background: #f7f1e9;
+    border-color: #eee2d4;
+    padding: 35px;
+    margin-bottom: 50px;
+}
+
+.contact-card h2 {
+    color: #80684f;
+}
+
+.contact-card p {
+    margin-bottom: 8px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    margin-top: 65px;
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: #edf2e8;
+    border-top: 1px solid #e0e8db;
+
+    color: #777b70;
+}
+
+.site-footer h2 {
+    font-size: 24px;
+    color: #536b52;
+    margin-bottom: 10px;
+}
+
+.site-footer p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* ========================================
+   TABLET RESPONSIVENESS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .dashboard-container {
+        padding: 0 25px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .profile-area h1 {
+        font-size: 35px;
+    }
+
+}
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 600px) {
+
+    .top-banner {
+        height: 200px;
+    }
+
+    .dashboard-container {
+        padding: 0 18px;
+    }
+
+    .profile-area {
+        padding-top: 65px;
+    }
+
+    .profile-area h1 {
+        font-size: 30px;
+    }
+
+    .profile-avatar {
+        width: 88px;
+        height: 88px;
+        font-size: 39px;
+        top: -55px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 20px 0;
+    }
+
+    .dashboard-card {
+        padding: 22px;
+        min-height: 135px;
+    }
+
+    .section-heading {
+        margin-top: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .site-footer {
+        padding: 30px 15px;
+    }
+
+}
+/* ========================================
+   COZY MINIMAL MUSIC PLAYER
+======================================== */
+
+.music-card {
+    background: #f0f5ec;
+}
+
+.music-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.music-cover {
+    width: 65px;
+    height: 65px;
+    background: #dce9d5;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.song-details h3 {
+    color: #465d43;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.song-details p {
+    font-size: 13px;
+    color: #85877d;
+}
+
+.music-progress {
+    width: 100%;
+    height: 6px;
+    background: #dce5d7;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0 12px;
+}
+
+.progress-bar {
+    width: 35%;
+    height: 100%;
+    background: #829d78;
+    border-radius: 20px;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-controls span {
+    font-size: 12px;
+    color: #85877d;
+}
+
+.play-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #829d78;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.play-button:hover {
+    background: #607b59;
+    transform: scale(1.08);
+}
+
+.music-message {
+    margin-top: 15px;
+    font-size: 12px !important;
+    color: #829078 !important;
+}
+
+/* ========================================
+   QUICK LINKS
+======================================== */
+
+.quick-links-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.quick-links-list a {
+    text-decoration: none;
+    color: #536b52;
+    background: #e6eee0;
+    border: 1px solid #d5e2ce;
+    padding: 9px 15px;
+    border-radius: 12px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.quick-links-list a:hover {
+    background: #829d78;
+    color: white;
+    transform: translateY(-3px);
+}
