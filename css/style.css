@@ -128,6 +128,22 @@ h4 {
     filter: drop-shadow(4px 10px 13px rgba(18, 13, 24, 0.48));
 }
 
+/* MOBILE AVATAR SIZE */
+
+@media (max-width: 600px) {
+    .profile-avatar {
+        width: 260px;
+        height: 260px;
+        top: -155px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile-avatar:hover {
+        transform: translateX(-50%) translateY(-6px);
+    }
+}
+
 
 /* DASHBOARD TITLE */
 .profile-area h1 {
@@ -644,7 +660,7 @@ h4 {
 @media (max-width: 600px) {
 
     .top-banner {
-        height: 200px;
+        height: 400px;
     }
 
     .dashboard-container {
@@ -661,8 +677,8 @@ h4 {
 
     .profile-avatar {
         top: -55px;
-        width: 88px;
-        height: 88px;
+        width: 100px;
+        height: 100px;
     }
 
     .about-section {
