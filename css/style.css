@@ -94,16 +94,11 @@ h4 {
 
 .profile-avatar {
     position: absolute;
-    top: -20px;
-    left: 5px;
-
+    top: -115px;
+    left: 10px;
     z-index: 5;
-
-
-    width: 140px;
-    height: 140px;
-
-
+    width: 200px;
+    height: 195px;
     overflow: visible;
     background: transparent;
     border: none;
@@ -665,7 +660,7 @@ h4 {
 @media (max-width: 600px) {
 
     .top-banner {
-        height: 180px;
+        height: 200px;
     }
 
     .dashboard-container {
@@ -681,7 +676,7 @@ h4 {
     }
 
     .profile-avatar {
-        top: -40px;
+        top: -50px;
         width: 1500px;
         height: 150px;
     }
