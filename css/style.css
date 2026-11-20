@@ -133,9 +133,9 @@ h4 {
 @media (max-width: 600px) {
     .profile-avatar {
         width: 100px;
-        height: 100px;
-        top: -170px;
-        left: 90%;
+        height: 150px;
+        top: -200px;
+        left: 10%;
         transform: translateX(-50%);
     }
 
