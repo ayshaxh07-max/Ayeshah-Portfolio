@@ -665,7 +665,7 @@ h4 {
 @media (max-width: 600px) {
 
     .top-banner {
-        height: 200px;
+        height: 100px;
     }
 
     .dashboard-container {
@@ -681,7 +681,7 @@ h4 {
     }
 
     .profile-avatar {
-        top: -55px;
+        top: 55px;
         width: 200px;
         height: 200px;
     }
