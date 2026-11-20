@@ -134,8 +134,8 @@ h4 {
     .profile-avatar {
         width: 100px;
         height: 100px;
-        top: -155px;
-        left: 50%;
+        top: -170px;
+        left: 90%;
         transform: translateX(-50%);
     }
 
