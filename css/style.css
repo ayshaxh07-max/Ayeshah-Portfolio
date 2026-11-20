@@ -96,9 +96,14 @@ h4 {
     position: absolute;
     top: -130px;
     left: 5px;
+
     z-index: 5;
+
+
     width: 200px;
     height: 200px;
+
+
     overflow: visible;
     background: transparent;
     border: none;
@@ -132,8 +137,8 @@ h4 {
 
 @media (max-width: 600px) {
     .profile-avatar {
-        width: 260px;
-        height: 260px;
+        width: 100px;
+        height: 100px;
         top: -155px;
         left: 50%;
         transform: translateX(-50%);
@@ -660,7 +665,7 @@ h4 {
 @media (max-width: 600px) {
 
     .top-banner {
-        height: 400px;
+        height: 300px;
     }
 
     .dashboard-container {
