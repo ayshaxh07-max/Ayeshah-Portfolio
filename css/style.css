@@ -86,7 +86,9 @@ h4 {
 }
 
 
+
 /* PROFILE AND AVATAR */
+
 .profile-area {
     position: relative;
     padding-top: 5px;
@@ -94,16 +96,11 @@ h4 {
 
 .profile-avatar {
     position: absolute;
-    top: -20px;
-    left: 5px;
-
+    top: 85px;
+    left: 6px;
     z-index: 5;
-
-
-    width: 140px;
-    height: 140px;
-
-
+    width: 300px;
+    height: 250px;
     overflow: visible;
     background: transparent;
     border: none;
@@ -133,24 +130,9 @@ h4 {
     filter: drop-shadow(4px 10px 13px rgba(18, 13, 24, 0.48));
 }
 
-/* MOBILE AVATAR SIZE */
-
-@media (max-width: 600px) {
-    .profile-avatar {
-        width: 100px;
-        height: 100px;
-        top: -155px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .profile-avatar:hover {
-        transform: translateX(-50%) translateY(-6px);
-    }
-}
-
 
 /* DASHBOARD TITLE */
+
 .profile-area h1 {
     margin: 0 0 20px 5px;
     color: var(--heading-color);
@@ -660,16 +642,20 @@ h4 {
 }
 
 
+
 /* MOBILE RESPONSIVE */
 
 @media (max-width: 600px) {
 
     .top-banner {
-        height: 180px;
+        width: 100%;
+        height: 220px;
     }
 
     .dashboard-container {
-        padding: 0 18px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 14px;
     }
 
     .profile-area {
@@ -680,17 +666,23 @@ h4 {
         font-size: 30px;
     }
 
+    /* Avatar on left, above dashboard title */
     .profile-avatar {
-        top: -40px;
-        width: 1500px;
+        top: -115px;
+        left: 6px;
+        width: 180px;
         height: 150px;
+        transform: none;
     }
 
     .about-section {
+        width: 100%;
         margin-top: 15px;
     }
 
     .about-hero-card {
+        width: 100%;
+        max-width: 100%;
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 17px;
@@ -698,6 +690,7 @@ h4 {
 
     .about-illustration,
     .about-image {
+        width: 100%;
         min-height: 250px;
         height: 250px;
     }
@@ -715,11 +708,14 @@ h4 {
     }
 
     .about-cards-grid {
-        grid-template-columns: 1fr;
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
         gap: 15px;
     }
 
     .about-info-card {
+        width: 100%;
+        min-width: 0;
         min-height: auto;
         padding: 23px;
     }
@@ -751,11 +747,19 @@ h4 {
     }
 
     .contact-card {
+        width: 100%;
         padding: 25px;
     }
 
     .site-footer {
         padding: 30px 15px;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
@@ -773,3 +777,4 @@ h4 {
         animation-iteration-count: 1 !important;
     }
 }
+
