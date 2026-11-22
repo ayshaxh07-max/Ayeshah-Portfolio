@@ -711,9 +711,12 @@ a:hover {
         font-size: 48px;
     }
 
-    .profile-area h1::after {
-        width: 250%;
-    }
+   .profile-area h1::after {
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
 
     .profile-avatar {
         left: 190 px;
