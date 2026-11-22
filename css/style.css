@@ -856,7 +856,7 @@ a:hover {
     }
 
     .profile-area h1::after {
-        width: 100%;
+        width: 200%;
         height: 4px;
     }
 
