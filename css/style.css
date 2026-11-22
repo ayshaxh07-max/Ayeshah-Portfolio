@@ -1,5 +1,5 @@
 
-/* GOOGLE FONT */
+/* google font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@300;400;500;600;700&display=swap');
 
@@ -28,11 +28,10 @@
     --shadow: rgba(18, 13, 24, 0.852);
     --card-hover-bg: #448227;
 
+    /* NEW 7 CARDS — BALANCED COLOUR DISTRIBUTION */
 
-/* NEW 11 CARDS — BALANCED COLOUR DISTRIBUTION */
 
 /* SAGE GREEN CARDS */
-
 .working-card,
 .programming-card,
 .favourite-authors-card,
@@ -42,7 +41,6 @@
 
 
 /* DUSTY PINK CARDS */
-
 .ai-project-card,
 .future-courses-card,
 .tech-card,
@@ -52,16 +50,16 @@
 
 
 /* MOCHA CARDS */
-
 .completed-courses-card,
 .favourite-hobbies-card,
 .hobbies-card {
     background: var(--mocha);
 }
 
-}git status
-/* RESET */
+}
 
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +90,7 @@ h6 {
 }
 
 
-/* TOP ANIME BANNER */
+/* TOP anime banner */
 
 .top-banner {
     position: relative;
@@ -115,12 +113,12 @@ h6 {
 
 
 /* MAIN CONTAINER */
-
 .dashboard-container {
     max-width: 1450px;
     margin: 0 auto;
     padding: 0 45px;
 }
+
 
 
 /* PROFILE AND AVATAR */
@@ -166,11 +164,10 @@ h6 {
     filter: drop-shadow(4px 10px 13px rgba(18, 13, 24, 0.48));
 }
 
-
+ 
 /* DASHBOARD TITLE */
 
-/* NAME MEET AYESHA */
-
+/*name Meet Ayesha*/
 .profile-area h1 {
     position: relative;
     display: inline-block;
@@ -182,8 +179,7 @@ h6 {
     font-family: 'Baloo 2', cursive;
 }
 
-
-/* NAME UNDERLINE */
+/* name underline*/
 
 .profile-area h1::after {
     position: absolute;
@@ -200,11 +196,11 @@ h6 {
         #a995c5,
         var(--mocha)
     );
+    
 }
 
 
 /* SHARED CARD STYLE */
-
 .glass-effect {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
@@ -214,14 +210,12 @@ h6 {
 
 
 /* ABOUT SECTION */
-
 .about-section {
     margin: 25px 0 45px;
 }
 
 
 /* INTRODUCTION CARD */
-
 .about-hero-card {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -243,7 +237,6 @@ h6 {
 
 
 /* INTRO IMAGE */
-
 .about-illustration {
     position: relative;
     min-height: 340px;
@@ -253,9 +246,7 @@ h6 {
     border-radius: 25px;
 }
 
-
-/* PICTURE IN ABOUT ME SECTION */
-
+/*picture that i've added in ABOUT ME section*/
 .about-image {
     display: block;
     width: 100%;
@@ -275,7 +266,6 @@ h6 {
 
 
 /* INTRO TEXT */
-
 .about-intro {
     padding: 20px;
 }
@@ -283,6 +273,7 @@ h6 {
 
 /* INTRODUCTION BADGE */
 
+/*A little about me section only*/
 .about-label {
     display: inline-block;
     margin-bottom: 19px;
@@ -306,20 +297,17 @@ h6 {
 }
 
 
-/* HEYY!! ITS AYSHAH TEXT */
-
+/* HEYY!! ITS AYSHAH TXT */
 .about-intro h2 {
     margin-bottom: 10px;
     color: var(--heading-color);
     font-size: 40px;
     line-height: 1.2;
-    font-family: 'Baloo 2', cursive;
+     font-family: 'Baloo 2', cursive;
     text-shadow: -1px 2px 2px rgba(18, 13, 24, 0.578);
 }
 
-
-/* SUB-HEADING */
-
+/*SUB-HEADIND*/
 .about-intro h3 {
     margin-bottom: 10px;
     color: #4b303cfe;
@@ -331,9 +319,7 @@ h6 {
     text-shadow: -1px 1px 1px rgba(67, 61, 34, 0.592);
 }
 
-
-/* PARAGRAPH */
-
+/*PARAGRAPH OF HEYY IT ME AYSHAH*/
 .about-intro p {
     margin-bottom: 12px;
     color: #e1ddd7eb;
@@ -343,7 +329,6 @@ h6 {
     line-height: 1.5;
     text-shadow: -1px 1.5px 1.7px rgba(23, 22, 17, 0.807);
 }
-
 
 /* EDUCATION BOX */
 
@@ -370,7 +355,6 @@ h6 {
 
 
 /* ABOUT CARDS GRID — 11 CARDS */
-
 .about-cards-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -380,7 +364,7 @@ h6 {
 }
 
 
-/* COMMON CARD STYLE */
+/*COMMON CARD STYLE*/
 
 .about-info-card {
     position: relative;
@@ -397,12 +381,12 @@ h6 {
         transform 0.3s cubic-bezier(0.2, 0.80, 0.25, 1),
         box-shadow 0.3s ease,
         border-color 0.6s ease,
-        background-color 0.3s ease;
+        background-color 0.03 ease
 }
 
 
 /* CARD TOP ACCENT */
-
+/* 7 cards mai joh emoji hai uske uper wali ine ki settings */
 .about-info-card::before {
     position: absolute;
     top: 0;
@@ -417,7 +401,7 @@ h6 {
 
 
 /* CARD DECORATION */
-
+/* CARDS ke ander joh corner per cirecle hai uss ki settings */
 .about-info-card::after {
     position: absolute;
     top: -20px;
@@ -481,6 +465,7 @@ h6 {
     margin: 0;
 }
 
+/* CARD HEADINGS */
 .about-info-card h3 {
     position: relative;
     z-index: 1;
@@ -494,7 +479,6 @@ h6 {
     overflow-wrap: break-word;
     text-shadow: 1px 2px 4px rgba(34, 32, 29, 0.727);
 }
-
 
 /* CARD SUBHEADING */
 
@@ -511,7 +495,6 @@ h6 {
 
 
 /* CARD PARAGRAPHS */
-
 .about-info-card p {
     position: relative;
     z-index: 1;
@@ -525,9 +508,7 @@ h6 {
     text-shadow: -1px 1px 1px rgba(41, 38, 33, 0.805);
 }
 
-
 /* CARD LISTS */
-
 .about-info-card ul {
     position: relative;
     z-index: 1;
@@ -552,7 +533,6 @@ h6 {
 
 
 /* HOBBY TAGS */
-
 .hobbies-list {
     position: relative;
     z-index: 1;
@@ -577,7 +557,7 @@ h6 {
     overflow-wrap: break-word;
     transition:
         transform 0.3s ease,
-        background-card 0.3s ease,
+        background-color 0.3s ease,
         box-shadow 0.3s ease;
 }
 
@@ -587,9 +567,8 @@ h6 {
     box-shadow: 0 6px 13px rgba(18, 13, 24, 0.505);
 }
 
-
-/* FOOTER LINE / DIVIDER */
-
+/* footer line */
+/* DIVIDER */
 .dashboard-divider {
     width: 100%;
     height: 3px;
@@ -600,15 +579,14 @@ h6 {
     box-shadow: 0 3px 10px var(--shadow);
 }
 
-
-/* CONTACT ME HEADINGS */
-
+/* CONTECT ME HEADINGS */
 .section-heading {
     margin: 55px 0 23px;
     padding-left: 6px;
 }
 
 .section-heading h2 {
+
     height: 65px;
     color: var(--heading-color);
     font-size: 39px;
@@ -618,6 +596,7 @@ h6 {
 }
 
 .section-heading p {
+   
     font-size: 15px;
     font-weight: 400;
     color: var(--heading-color);
@@ -661,9 +640,7 @@ h6 {
     text-shadow: -1px 2px 2px rgba(32, 29, 23, 0.974);
 }
 
-
-/* EMAIL, LINKEDIN, GITHUB COLOR SETTINGS */
-
+/*Email, linkedin, Github color settings*/
 a {
     font-size: 18px;
     font-weight: 600;
@@ -676,12 +653,10 @@ a {
 }
 
 a:hover {
-    color: #4b303c91;
+    color:#4b303c91;
 }
 
-
 /* FOOTER */
-
 .site-footer {
     margin-top: 65px;
     padding: 30px 20px;
@@ -708,6 +683,18 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*Accessibility Reduced Motion*/
 /* TABLET RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
@@ -786,7 +773,7 @@ a:hover {
 }
 
 
-/* SMALL TABLETS */
+/*SMALL TABLETS */
 
 @media (max-width: 700px) {
 
@@ -1105,7 +1092,6 @@ a:hover {
     }
 }
 
-
 /* SMOOTH TOUCH INTERACTIONS MOBILE + TABLET */
 
 @media (max-width: 900px) {
@@ -1121,7 +1107,6 @@ a:hover {
     .hobbies-list span,
     .contact-card,
     .contact-card a {
-
         transition:
             transform 0.35s ease,
             box-shadow 0.35s ease,
@@ -1144,9 +1129,9 @@ a:hover {
         transform: translateY(-2px);
     }
 
-    .contact-card a {
-        transition: color 0.3s ease; opacity: 0.35s ease;
-    }
+  .contact-card a {
+    transition: color 0.35s ease, opacity 0.35s ease;
+}
 
     .contact-card a:active {
         opacity: 0.75;
@@ -1189,7 +1174,6 @@ a:hover {
     }
 }
 
-
 /* ACCESSIBILITY: REDUCED MOTION */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1220,3 +1204,5 @@ a:hover {
         transform: none !important;
     }
 }
+
+
