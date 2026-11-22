@@ -58,7 +58,6 @@
 
 }
 
-
 /* RESET */
 * {
     margin: 0;
@@ -203,7 +202,7 @@ h6 {
 /* SHARED CARD STYLE */
 .glass-effect {
     background: var(--card-bg);
-    border: 1px solid var(--card-border);
+    border: 100px solid var(--card-border);
     border-radius: 25px;
     box-shadow: 0 20px 35px var(--shadow);
 }
@@ -694,7 +693,8 @@ a:hover {
 
 
 
-/*Accessibility Reduced Motion*/
+
+
 /* TABLET RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
@@ -1129,9 +1129,9 @@ a:hover {
         transform: translateY(-2px);
     }
 
-  .contact-card a {
-    transition: color 0.35s ease, opacity 0.35s ease;
-}
+    .contact-card a {
+        transition: color 0.3s ease;
+    }
 
     .contact-card a:active {
         opacity: 0.75;
@@ -1141,7 +1141,7 @@ a:hover {
 
 /* TABLET: HOVER EFFECTS */
 
-@media (min-width: 601px) and (max-width: 900px) and (hover: hover) {
+@media (min-width: 601px) and (max-width: 900px) {
 
     .about-info-card:hover {
         transform: translateY(-7px);
