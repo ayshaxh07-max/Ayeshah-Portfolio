@@ -846,6 +846,7 @@ a:hover {
     .banner-wave {
         bottom: -65px;
         height: 150px;
+        border-radius: 0 0 30px 30px;
     }
 
     .dashboard-container {
@@ -892,7 +893,7 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 14px;
         padding: 15px;
-        border-radius: 18px;
+        border-radius: 37px;
     }
 
     .about-illustration {
@@ -905,18 +906,20 @@ a:hover {
         aspect-ratio: 3 / 4;
         object-fit: cover;
         border-width: 6px;
-        border-radius: 30px;
+        border-radius: 35px;
         box-shadow: 0 10px 25px rgba(80, 71, 51, 0.45);
     }
 
     .about-intro {
         padding: 8px 2px;
+        
     }
 
     .about-label {
         margin-bottom: 10px;
         padding: 6px 10px;
         font-size: 13px;
+         border-radius: 20px;
     }
 
     .about-intro h2 {
@@ -939,13 +942,14 @@ a:hover {
     .about-education {
         padding: 12px;
         font-size: 15px;
+        border-radius: 29px;
         overflow-wrap: anywhere;
     }
 
     /* 7 cards wala section */
     .about-cards-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 26px; /* cards ke bich gap */
         margin-top: 12px;
     }
  /* cards ka shape */
@@ -954,7 +958,7 @@ a:hover {
         min-width: 0;
         min-height: auto;
         padding: 22px 19px;
-        border-radius: 35px;
+        border-radius: 37px;
     }
 
     .about-card-heading {
@@ -1035,8 +1039,8 @@ a:hover {
 /* Get in Touch wala margin */
     .contact-card {
         margin-bottom: 30px;
-        padding: 15px 16px;
-        border-radius: 35px;
+        padding: 18px 16px;
+        border-radius: 37px;
     }
 /* Get in Touch wala section */
     .contact-card h2 {
@@ -1071,6 +1075,7 @@ a:hover {
 }
 
 
+/*------------------------------------------------------------------*/
 /* VERY SMALL MOBILE SCREENS */
 
 @media (max-width: 380px) {
