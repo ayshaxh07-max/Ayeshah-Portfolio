@@ -942,18 +942,19 @@ a:hover {
         overflow-wrap: anywhere;
     }
 
+    /* 7 cards wala section */
     .about-cards-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
-        margin-top: 18px;
+        gap: 25px;
+        margin-top: 12px;
     }
-
+ /* cards ka shape */
     .about-info-card {
         width: 100%;
         min-width: 0;
         min-height: auto;
         padding: 22px 19px;
-        border-radius: 17px;
+        border-radius: 35px;
     }
 
     .about-card-heading {
@@ -963,79 +964,90 @@ a:hover {
     }
 
     .about-card-icon {
-        width: 45px;
-        height: 45px;
+        width: 47px;
+        height: 47px;
         flex-shrink: 0;
-        font-size: 23px;
-        border-radius: 14px;
+        font-size: 26px;
+        border-radius: 16px;
     }
-
+/* 7 cards ki headings */
     .about-info-card h3 {
         top: 0;
-        font-size: 20px;
-        line-height: 1.3;
+        font-size: 22px;
+        line-height: 1.2;
         overflow-wrap: anywhere;
     }
-
+ 
+/* UniGuide heading */
     .about-info-card h4 {
-        font-size: 21px;
+        font-size: 25px;
     }
 
+   /* 7 cards paragraphs */ 
     .about-info-card p {
         font-size: 15px;
         line-height: 1.6;
+        font-weight: 750;
     }
+    
 
+    /* jin cards ji listing hai woh left per hon yah right per */
     .about-info-card ul {
         padding-left: 20px;
     }
-
+/* 7 cards list ki setting */
     .about-info-card li {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.7;
         overflow-wrap: anywhere;
     }
 
+
+ /* Hobbies jog purple list me hain unki setting*/
     .hobbies-list span {
         max-width: 100%;
         font-size: 13px;
-        overflow-wrap: anywhere;
+        border-radius: 19px;
+        overflow-wrap: anywhere;  
     }
-
+/* Divide karne wali line cards ke niche */
     .dashboard-divider {
-        margin-bottom: 45px;
+        margin-top:  55px;
+        height: 4px;
     }
-
+/* line ke niche wala margin setting */
     .section-heading {
         margin: 35px 0 18px;
         padding-left: 2px;
     }
-
+/* LET' CONNECT section */
     .section-heading h2 {
         height: auto;
-        font-size: 29px;
-        line-height: 1.3;
+        margin-top: -10px;
+        font-size: 33px;
+        line-height: 1.7;
     }
-
+/* single paragraph wala section */
     .section-heading p {
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 350;
     }
-
+/* Get in Touch wala margin */
     .contact-card {
         margin-bottom: 30px;
-        padding: 20px 16px;
-        border-radius: 17px;
+        padding: 15px 16px;
+        border-radius: 35px;
     }
-
+/* Get in Touch wala section */
     .contact-card h2 {
         font-size: 27px;
     }
-
+/* uska paragraph */
     .contact-card p {
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.2;
     }
-
+ /* email, linkedin, github links section */
     .contact-card a {
         display: inline-block;
         max-width: 100%;
@@ -1045,7 +1057,8 @@ a:hover {
 
     .site-footer {
         margin-top: 40px;
-        padding: 25px 14px;
+        padding: 10px 14px;
+        border-radius: 37px 37px 0 0;
     }
 
     .site-footer h2 {
